@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        /*자바스크립트 배열 생성 방법
+        1. let 배열명 = new Array(원소1, 원소2,...원소n);
+        2. let 배열명 = [원소1, 원소2,...원소n];
+        3. let 배열명 = new Array();
+        ※자바스크립트에서의 배열은 모든 데이터타입(자료형)을 다 담을 수 있다.
+        */
+
+        let arr1 = new Array("홍길동", "hong", 27, true);
+        document.write(arr1 + "<br>");//전체요소 출력
+        document.write("<hr>");
+        document.write(arr1[3] + "<br>");//특정 요소 출력
+        document.write("<hr>");
+
+        for (let i = 0; i < arr1.length; i++) {
+            document.write("arr1[" + i + "] >>> " + arr1[i] + "<br>");
+        }
+        document.write("<hr>");
+
+        //자박스크립트의 단축 for문
+        for (let k in arr1) {
+            document.write("arr1 배열요소 >>> " + arr1[k] + "<br>");
+        }
+        document.write("<hr>");
+
+        //방법2
+        let arr2 = ["홍길동", "hong", 27, true];
+
+        for (let i = 0; i < arr1.length; i++) {
+            document.write("arr2[" + i + "] >>> " + arr2[i] + "<br>");
+        }
+        document.write("<hr>");
+
+        //방법3
+        let arr3 = new Array();
+        arr3[0] = "홍길동";
+        arr3[1] = "hong";
+        arr3[2] = 27;
+        arr3[3] = true;
+
+        for (let i = 0; i < arr1.length; i++) {
+            document.write("arr3[" + i + "] >>> " + arr3[i] + "<br>");
+        }
+
+       
+
+
+    </script>
+</head>
+<body>
+ 
+    
+</body>
+</html>
