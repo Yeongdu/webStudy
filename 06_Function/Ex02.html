@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    <input type="text" name="수1" id="a" style="width: 50px;height: 20px;">
+    <select name = "연산자" id="op" style="width: 50px;height: 25px;">
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">*</option>
+        <option value="/">/</option>
+        <option value="%">%</option>
+    </select>
+
+    <input type="text" name="수2" id="b" style="width: 50px;height: 20px;">
+
+    <input type="button" onclick="cal()" value="계산~~뿅 >">
+    <input type="text" name="결과" id="c" style="width: 80px;height: 20px;">
+    <br><br><br>
+
+
+    
+<script>
+    /*
+    [문제] 키보드로 두 수와 연산자를 입력받아 연산자에 해당하는 함수를 
+    호출하여 연산 결과를 화면에 출력하는 코드를 완성해보세요.
+    */
+
+    function cal(){
+        let num1 = parseInt(document.getElementById("a").value);
+        let num2 = parseInt(document.getElementById("b").value);
+        let oper = document.getElementById("op").value;
+        let result;
+        if(oper=="+"){
+            result=(num1+num2);
+        }else if(oper=="-"){
+            result=(num1-num2);
+        }else if(oper=="*"){
+            result=(num1*num2);
+        }else if(oper=="/"){
+            result=(num1/num2);
+        }else if(oper=="%"){
+            result=(num1%num2);
+        }
+        document.getElementById("c").value = result;
+    }
+</script>
+</body>
+</html>

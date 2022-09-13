@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        /*
+            [문제] 키보드로 두 수와 연산자를 입력받아서 연산자에
+                    해당하는 함수를 호출하여 연산 결과를 화면에 
+                    출력하는 코드를 완성해 보세요.
+        */
+       
+        function plus(su1, su2) {
+            document.write
+                ("두 수의 덧셈 >>> " + (su1 + su2) + "<br>");
+        }
+
+        function minus(a1, a2) {
+            document.write
+                ("두 수의 뺄셈 >>> " + (a1 - a2) + "<br>");
+        }
+
+        function mul(s1, s2) {
+            document.write
+                ("두 수의 곱셈 >>> " + (s1 * s2) + "<br>");
+        }
+
+        function divide(z1, z2) {
+            document.write
+                ("두 수의 나눗셈 >>> " + (z1 + z2).toFixed(3) + "<br>");
+        }
+
+        function mod(t1, t2) {
+            document.write
+                ("두 수의 나머지 >>> " + (t1 % t2) + "<br>");
+        }
+
+        let su1 = Number(prompt("첫번째 정수 입력"));
+
+        let su2 = Number(prompt("두번째 정수 입력"));
+
+        let op = prompt("연산자 입력");
+
+        switch (op) {
+            case "+":
+                plus(su1, su2);
+                break;
+            case "-":
+                minus(su1, su2);
+                break;
+            case "*":
+                mul(su1, su2);
+                break;
+            case "/":
+                divide(su1, su2);
+                break;
+            case "%":
+                mod(su1, su2);
+                break;
+            default:
+                alert("잘못된 연산자를 입력하였습니다.");
+        }
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
