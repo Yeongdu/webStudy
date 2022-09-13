@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+        <li>이름 <input type="text" name="이름" id="name"></li>
+        <li>학번 <input type="text" name="학번" id="hakbun"></li>
+        <li>학과 <input type="text" name="학과" id="major"></li>
+        <li>연락처 <input type="text" name="연락처" id="phone"></li>
+        <li>주소 <input type="text" name="주소" id="addr"></li>
+        </ul>
+    
+        <input style="margin-left: 50px;" type="button" onclick="show()" value="뿅">
+    
+        <script>
+        function show(){
+        let student = { }
+         student.name=document.getElementById("name").value;
+         student.hakbun=document.getElementById("hakbun").value;
+         student.major=document.getElementById("major").value;
+         student.phone=document.getElementById("phone").value;
+         student.addr=document.getElementById("addr").value;
+    
+        document.write("<ul>");
+                for(let k in student){
+                    document.write("<li>"+k+" : "+student[k]+"</li>");
+                }
+            document.write("</ul>");
+        }
+        </script>
+    
+</body>
+</html>

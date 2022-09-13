@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        /*
+        내장 객체 : 자바스크립트에서 제공해 주고 있는 객체
+        예)Date, Math가 대표적인 내장 객체
+        */
+
+        // Date객체 : 날짜와 시간과 관련된 정보를 제공
+        // getYear() : 기준년도 1900년을 기준으로 하고있다. 0으로 인식
+
+        let date = new Date();
+
+        document.write("현재 년도 : "+date.getFullYear()+"년<br>");
+        document.write("현재 월 : "+date.getMonth()+"월<br>");
+        document.write("현재 일 : "+date.getDate()+"일<br>");
+
+        //현재 시간
+        document.write("현재 시간  " +date.getHours()+" : ");
+        document.write(date.getMinutes()+" : ");
+        document.write(date.getSeconds());
+
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

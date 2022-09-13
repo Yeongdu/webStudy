@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+    <li>제품명 <input type="text" name="제품명" id="productName"></li>
+    <li>입고가 <input type="text" name="입고가" id="product_inputPrice"></li>
+    <li>출고가 <input type="text" name="출고가" id="product_outputPrice"></li>
+    <li>제조사 <input type="text" name="제조사" id="productCompany"></li>
+    </ul>
+
+    <input style="margin-left: 50px;" type="button" onclick="show()" value="뿅">
+
+
+    
+    <script>
+
+    function show(){
+    let product = { }
+    product.productName=document.getElementById("productName").value;
+    product.product_inputPrice=document.getElementById("product_inputPrice").value;
+    product.product_outputPrice=document.getElementById("product_outputPrice").value;
+    product.productCompany=document.getElementById("productCompany").value;
+
+    document.write("<ul>");
+            for(let k in product){
+                document.write("<li>"+k+" : "+product[k]+"</li>");
+            }
+
+        document.write("</ul>");
+    }
+
+
+</script>
+    
+</body>
+</html>
