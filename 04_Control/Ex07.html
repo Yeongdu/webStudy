@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        /*
+        난수 발생 추첨 경품
+        1~10 사이의 숫자를 랜덤하게 뽑아보자
+        3번 : 냉장고 당첨 / 5번 : 노트북 / 8번 : TV / 그외 꽝
+        난수 발생 함수 (Math.random()*마지막숫자)+시작숫자
+        */
+       let luckyNum = Math.floor(Math.random()*10)+1
+       switch(luckyNum){
+
+        case 3 :
+            document.write("냉장고에 당첨되었습니다.");
+            break;
+        case 5 :
+            document.write("노트북에 당첨되었습니다.");
+            break;
+        case 8 :
+            document.write("TV에 당첨되었습니다.");
+            break;
+        default:
+            document.write(luckyNum +"번호는 꽝입니다..")
+       }
+
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>

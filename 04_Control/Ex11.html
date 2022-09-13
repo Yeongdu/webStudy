@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        for(let i=1; i<=100; i++){
+            if(i%5==0){
+                document.write("<font color = 'red'>"+i+"&nbsp")
+            }else if(i%6==0){
+                document.write("<font color = 'aqua'>"+i+"&nbsp")
+            }else if(i%7==0){
+                document.write("<font color = 'green'>"+i+"&nbsp")
+            }else{
+                document.write(i+"&nbsp");
+            }
+        }
+
+        document.write("<br><br><hr><br><br>");
+
+    //홀수의 합과 짝수의 합
+
+        let su = Number(prompt("정수를 입력하세요."));
+
+        let odd = 0;
+        let even = 0;
+
+        for(let i=0; i<=su; i++){
+            if(i%2==0){
+                even += i;
+            }else if(i%2==1){
+                odd += i;
+            }
+        }
+        
+        document.write("<h2><font color = 'blue'>입력한 수는 : " + su + "<br>");
+        document.write("홀수의 합은 : " + odd + "<br>");
+        document.write("짝수의 합은 : " + even + "<br></h2>");
+
+        document.write("<br><br><hr><br><br>");
+a
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

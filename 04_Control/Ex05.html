@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let name = prompt("이름을 입력하세요.");
+        let han = Number(prompt("국어점수를 입력하세요."));
+        let eng = Number(prompt("영어점수를 입력하세요."));
+        let math = Number(prompt("수학점수를 입력하세요."));
+        let java = Number(prompt("자바점수를 입력하세요."));
+
+        let avg = (han+eng+math+java)/4;
+        let hak;
+
+        if(avg>=90){
+            hak="A";
+        }else if(avg>=80){
+            hak="B"
+        }else if(avg>=70){
+            hak="C"
+        }else if(avg>=60){
+            hak="D"
+        }else if(avg<60){
+            hak="F"
+        }
+        
+        document.write("");
+        document.write("<h2>"+name+" 학생의 총점 : " +(han+eng+math+java)+"점<br>");
+        document.write(name+" 학생의 평균 : " +(han+eng+math+java)/4+"점<br>");
+        document.write(name+" 학생의 학점 : " +hak+"</h2>");
+        
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
