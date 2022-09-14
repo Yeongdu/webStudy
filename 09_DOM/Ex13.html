@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        onload = function () {
+            let button = document.getElementById("dtnChannel1");
+
+            button.onclick = function () {
+                let myDiv = document.getElementById("myDiv");
+                myDiv.style.backgroundColor = "PaleTurquoise";
+                myDiv.style.fontSize = "2em";
+                myDiv.style.width = "50%";
+                myDiv.style.textAlign = "center";
+
+                document.getElementById("str").style.color = "Teal";
+            }
+        }
+        function go_change() {
+            alert("스타일 변경 예제입니다.");
+        }
+    </script>
+</head>
+
+<body>
+    <div id="myDiv" style="height: 100px;">
+        <span id="str">안녕</span>하세요!
+    </div>
+
+    <input type="button" id="dtnChannel1" value="스타일변경">
+    <input type="button" id="dtnChannel2" value="스타일변경" onclick="go_change()">
+
+</body>
+
+</html>
