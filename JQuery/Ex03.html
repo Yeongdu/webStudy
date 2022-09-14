@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.1.js"></script>
+    <script>
+        /*
+        제이쿼리에서 선택자 사용 방법
+        1. 직접 선택자
+        - 전체 선택자 // $("*") => 모슨 요소(태그)를 선택
+        - 아이디 선택자 // $("#id") => id 요소 선택
+        - 클래스 선택자 // $(".class") => class 요소 선택
+        - 요소(태그) 선택자 //$("요소(태그명") => 지정된 요소(태그)명 선택
+        - 그룹 선택자 $("선택1, 선택2, ... 선택n") => 요소들을 한꺼번에 선택
+        */
+
+        $(function(){
+            //전체 선택자 $("*") 
+            $("*").css("border","2px solid orange");
+        })
+    </script>
+</head>
+<body>
+    <h1>제이쿼리</h1>
+    <h2>직접 선택자 및 관계 선택자</h2>
+    <h3>직접 선택자</h3>
+    <h3>관계 선택자</h3>
+    
+</body>
+</html>
