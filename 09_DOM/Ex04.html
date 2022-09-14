@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        onload = function() {
+            //1. 이미지 태그 만들기
+            let img_el = document.createElement("img");
+
+            //2. 속성 지정
+            // setAttribute("name", "value");
+            img_el.setAttribute("src", "../images/beauty.jpg");
+            img_el.setAttribute("width", "200");
+            img_el.setAttribute("height", "200");
+
+            //4. DOM으로 만든 img태그를 문서의본문(body)에 추가
+            document.body.appendChild(img_el);
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
