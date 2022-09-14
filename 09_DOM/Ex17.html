@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        onload = function () {
+            let button = document.getElementById("btn");
+            button.onclick = function () {
+                let text1 = document.getElementById("text1").value;
+
+
+                if (text1 == "") {
+                    alert("내용을 입력하세요.")
+                } else {
+                    document.getElementById("text2").value = text1;
+                }
+            }
+        }
+    </script>
+
+
+
+</head>
+
+<body>
+    <h2>버튼을 누르면 첫번째 텍스트 창에 입력된 내용을
+        두번째 텍스트 찾으로 복사해보자</h2>
+
+    <input type="text" name="" id="text1"><br>
+    <input type="text" name="" id="text2"><br><br>
+    <input type="button" id="btn" value="복사"><br>
+
+</body>
+
+</html>
