@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.1.js"></script>
+    <script>
+          $(function(){
+            //자식 요소 선택자 : $("요소 선택 > 자식요소")
+            $(".wrap > li").css({
+                "background-color" : "lightyellow",
+                "color" : "red",
+                "border" : "2px dotted plum",
+                "width" : "20%"      
+            });
+          });
+
+    </script>
+</head>
+<body>
+    <h2>인접 관계 선택자</h2>
+    <ul class="wrap">
+        <li>내용1</li>
+        <ul>
+            <li>내용2</li>
+            <li>내용3</li>
+        </ul>
+        <li>내용4</li>
+    </ul>
+</body>
+</html>
