@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        onload = function(){
+            let header = document.getElementById("header");
+            //let header = document.querySelector("#header");
+            //querySelector로도 가능하다.
+            
+
+            //h1 태그의 스타일을 변경해보자
+            header.style.border="dashed 3px";
+            header.style.color="LightSeaGreen";
+            header.style.fontStyle="italic";
+            header.innerHTML = "방가방가";
+
+        }
+
+    </script>
+</head>
+<body>
+    <h1 id="header">Header</h1>
+    
+</body>
+</html>
