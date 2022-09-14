@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+    onload = function() {
+        //문서에서 요소를 찾는 방법 3가지
+        //2. getElementsByTagName(tagName)->tagName과 일치하는 요소를 배열로 가져오는 함수
+
+        let headers = document.getElementsByTagName("h1");
+        
+        //headers[0].innerHTML = "headers[0]";
+        //headers[1].innerHTML = "headers[1]";
+
+        console.log("h1 태그 length >>> " + headers.length);
+
+    }
+
+    </script>
+</head>
+<body>
+    <h1>Header1</h1>
+    <p>header1 내용</p>
+    
+    <hr>
+    
+    <h1>Header2</h1>
+    <p>header2 내용</p>
+
+</body>
+</html>
