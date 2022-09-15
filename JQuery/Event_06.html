@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.1.js"></script>
+    <script>
+        /*
+        - mousemove() : 선택한 요소의 영역에서 마우스를 움직일때마다 이벤트 발생
+                형식) $("요소선택").mousemove(function(매개변수) {...});
+        */
+
+         $(function(){
+            //document선택자 : 문서 전체영역
+            $(document).mousemove(function(e){
+                let x = e.pageX; //마우스의 x좌표 값
+                let y = e.pageY; //마우스의 y좌표 값
+                $("h2").text( "x 좌표 : " + x +" / y 좌표 : " + y);
+            }); 
+
+         });
+
+    </script>
+</head> 
+<body>
+    <h2></h2>
+</body>
+</html>
