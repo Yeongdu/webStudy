@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.1.js"></script>
+    <script>
+        /*
+        이벤트 이름(목록)
+        blur, change, load, unload, resize, scroll, select, submit, click, dbclick,
+        mousedown, mouseup, mousemove, mouseover, mouseout, mouseleave, focus,
+        keydown, keypress, keyup, ... 
+        */
+      
+         $(function(){
+            $(".menu li").on("click", function() {
+                alert($(this).html());
+                //현재 선택된거 가져오는 키워드 $(this)
+            });
+         });
+
+    </script>
+</head>
+<body>
+    <ul class="menu">
+        <li>짜장면</li>
+        <li>짬뽕</li>
+        <li>탕수육</li>
+        <li>볶음밥</li>
+        <li>군만두</li>
+    </ul>
+</body>
+</html>
