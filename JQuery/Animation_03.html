@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.1.js"></script>
+    <script>
+        /*
+        fadeOut() : 노출되어있던 요소가 점점 투명해지면서 숨겨지는 함수
+            형식) $("요소선택").fadeIn(효과속도(ms), 콜백함수);
+
+        fadeIn() : 숨겨져 있는 요소가 점점 불투명해지면서 노출되는 함수
+            형식) $("요소선택").fadeIn(효과속도(ms), 콜백함수);
+
+        fadeToggle() : 숨겨진요소는 점점 나타나게, 노출된 요소는 점점 사라지게 하는 함수 
+            형식) $("요소선택").fadeToggle(효과속도(ms), 콜백함수);
+        */
+
+         $(function(){
+
+            $(".btn1").on("click", function(){
+                $("img").fadeOut(1500);
+            });
+
+            $(".btn2").on("click", function(){
+                $("img").fadeIn(1500);
+            });
+
+            $(".btn3").on("click", function(){
+                $("img").fadeToggle(1000);
+            });
+
+         });
+
+    </script>
+</head> 
+<body>
+    <br><br><br>
+    <button class="btn1">fadeOut</button>
+    <button class="btn2">fadeIn</button>
+    <button class="btn3">fadeToggle</button>
+    <br><br><br>
+    <img src="..\images\img.jpg" alt="튤립이미지">
+</body>
+</html>
